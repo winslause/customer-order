@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>Welcome to CustomerOrder</h1>
+            <p class="lead">Manage your customers and orders with ease.</p>
+            {% if user.is_authenticated %}
+                <a href="{% url 'customers' %}" class="btn btn-primary btn-lg mx-2">View Customers</a>
+                <a href="{% url 'orders' %}" class="btn btn-primary btn-lg mx-2">View Orders</a>
+            {% else %}
+                <a href="/oidc/authenticate/" class="btn btn-primary btn-lg">Login to Continue</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

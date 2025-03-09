@@ -1,0 +1,9 @@
+django==5.0.6
+django-environ==0.11.2
+mozilla-django-oidc==4.0.0
+requests==2.32.3
+python-decouple==3.8
+coverage==7.6.1
+gunicorn==23.0.0
+whitenoise==6.7.0
+africastalking==1.2.6

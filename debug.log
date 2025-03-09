@@ -1,0 +1,439 @@
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\core\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /api/customers/
+Forbidden: /api/customers/
+C:\Users\wenbu\Documents\customer order\customer_order_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden: /api/customers/
+Forbidden: /api/customers/
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\Documents\customer order\core\views.py", line 12, in get
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\Documents\customer order\core\views.py", line 12, in get
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\Documents\customer order\core\views.py", line 12, in get
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wenbu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+C:\Users\wenbu\Documents\customer order\customer_order_api\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\core\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\core\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\core\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\core\utils\sms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Session data corrupted
+Session data corrupted
+Session data corrupted
+C:\Users\wenbu\Documents\customer order\customer_order_api\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Session data corrupted
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Error sending SMS to +254769525570: The supplied authentication is invalid
+C:\Users\wenbu\Documents\customer order\customer_order_api\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+SMS sent successfully to +254769525570: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_05d879e6941a31392c37159395f6cc85', 'number': '+254769525570', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_b25d3363480fa072a061565c02016373', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_6544041120dd7c3be3b65bf4fd502565', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_588a33d0ed5726e2cf289212f05b24bc', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_8893a38ef2209a315b314d7850a2e939', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_78e17490a88814237592b69fa487c6c7', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_9506eea466659b020547bef57d1af63c', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_1cdc442f81e58395d613e613a88ce9e1', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_4a8450c01a4c3d464d0558c3393f0e71', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_4fc869c1edcc337b10af50fdea415aa8', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_d66095f100f50d5b0c9b752e152cd695', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+Error sending SMS to +254712345678: HTTPSConnectionPool(host='api.sandbox.africastalking.com', port=443): Max retries exceeded with url: /version1/messaging (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_2914dd0249ca01adbea777cd1d0ee97a', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_c8483bfee9dc6b64b4f9942ced1ed7fd', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_8320a3b3bfb5b517a34ab3c149d88ea6', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_04b9f32acf733b0c39948d0e02139d77', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+Watching for file changes with StatReloader
+Method Not Allowed: /oidc/logout/
+Method Not Allowed: /oidc/logout/
+Method Not Allowed: /oidc/logout/
+Method Not Allowed: /oidc/logout/
+Method Not Allowed: /oidc/logout/
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_f792ca6ecaff93eab6c20d3bfcc69320', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_23280fc521858456169b16c1a768ee36', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_9956204d03a20f00786f581d6cdf70fa', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_ff9b932064812ab8bf1173970ba0a937', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_c847fc8bb1889283ccd28c61e35c954a', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+Error sending SMS to +254712345678: HTTPSConnectionPool(host='api.sandbox.africastalking.com', port=443): Max retries exceeded with url: /version1/messaging (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_c2912b4a86b8cd2333cf0511001acbe4', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_eafeb779150b721b1dac6d60985ab468', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_0b4479043cd56747512044b9c11574ed', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_35cb885e79e6ff3120225cd5af5e0ce2', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_05bf7a3f50993dfdd39adecda2faca19', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_2f3929a74b710f1c62e5effcaaab7ccd', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_3076172611187752ecce731cf58b77ea', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_1bab6f6fc026350c641c0e2b43a8ec57', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_ff1f9e9ebcb8e0fff092ff67e79fca6f', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_9838e5c0e58551e6ce9fd16d2d8a3abd', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_eb8326bcbd1eb0845942ae90c6edb870', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_1e7f660ce30e375f98cdf7a1f2b941e5', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_51360ae3a5fcec33fa778b2ed45879d7', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_f33398d0a3140807375882565be0b95a', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_b1918ec17e7dd4edfe97050062a7d9da', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_3a890ffa9e8cdd377b1c1ded0e739d35', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_923ea3fc698dc4fea961e60f66d5c040', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_fc42136faefe4d3b6d8a1e4a8e34888f', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_3c192a128e20870f53a0b309d8140758', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_1321ed45f263b7444b56727cfa14f045', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_462c3f1a3ee36b95bbc90cf391810aad', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_ae3fa9ffc4aae0bf441a7ccac788cf63', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_05afe1c68e72a0abe8d466f9f0877958', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_a1ad3c6af100961bce340336d029f681', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_596a38fe14896657bc4905ec4ee3f9b5', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_73f88b72ecc587a51b36ba8fea139223', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_97b0c57a7dab9dbff9ab1f556a565fbb', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_8f4fa37702c32ebe95e910ec13283661', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_3bd470708c1f375aaf310c8d199d0397', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_89ccb7a8c48a52ac7a72db8d30261155', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_ba4a8b6f38c78861a9a66da2ff99a951', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345679: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_37a7381a5a32dab42e131f3144379b5e', 'number': '+254712345679', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345679: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_c8bfc6310f85559a4c840367d3e68be0', 'number': '+254712345679', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_c0cfe2447fda0f6f4d013bfd0b432a6f', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_0a79673e97060740756622e5e0eed53a', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_0fb65c5e46ccd477d5fe0f56a9eacdb0', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_180338f8bf65ea1568e3039d228f2218', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_bb5725a85b0a1fe90c107c66dc3d7c79', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+Watching for file changes with StatReloader
+Method Not Allowed: /oidc/logout/
+Not Found: /oidc/
+Not Found: /oidc/
+Method Not Allowed: /oidc/logout/
+C:\Users\wenbu\Documents\customer order\customer_order_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\wenbu\Documents\customer order\customer_order_api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /oidc/logout/
+Method Not Allowed: /oidc/logout/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_499f45091b543071986a0ac190d70ff9', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_fc57d50d9ad3af7e86a07c045bebffa3', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_e04a1dc8c2d7133b66016407f47dc79c', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_10835096f87e207491256d20482a6008', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_0f1c9a2d52f5a9e223559ef5b34019d3', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_aeaf63f9f88190777f3c5ef24cd376bf', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_0842c4dbaa0858bc384911f6347c99ca', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_a13cce5cdfde84f889ff6286fe565ec0', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_cc71b538aa207528a8e720552cc366cb', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_f1e74dc1d997fd63b9e50f141a29430c', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_d2e576a8a71a0cda24edaa76db8cf40e', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_b5b6174e42e26c7558dc6910f491d254', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_45bedcd269adc9fc232204070f4f1614', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_3053a5f6d0c21be2bb3ea2e7fcf1adf6', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_db3c6f7070d806ba4406b66f762c1fe5', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_d9a7a6445a7f1300512be1f87a9788e8', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_32aed093f1e5dc490a69e0266fd234b4', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_cc3c0d73ec7c20547cdfa58fa557a057', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_f70b8bdf6dd3a9cdbcdd80c2504540ee', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_5781072bfe62163b2d91c6c6847f840d', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_4d7cb1fbb99588edf5d63e15949a0294', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_cee153c42957dcc3f868eabe268d39e0', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_b8f1779c32e4ef5761e4b3758bb18359', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_f8fbb6603c38de3b3816c9f521759db3', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_3250e7fea52ba2897d4992927291176a', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_9d3419178fbaf6bcc28bb334e3d781b8', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_c2f7ed53803593bc984f27c7168fe039', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_e9c058c07df5db8cae04940f34cffdec', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_04442df8615d0aa90962840894305fb1', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_4e8bd0d148c775d25fc9a1a6a8002c97', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
