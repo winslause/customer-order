@@ -437,3 +437,12 @@ SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 
 SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_e9c058c07df5db8cae04940f34cffdec', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
 SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_04442df8615d0aa90962840894305fb1', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
 SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_4e8bd0d148c775d25fc9a1a6a8002c97', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+SMS sent successfully to +254748699974: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_0efee84bbddcd6c540eb115fc1100a95', 'number': '+254748699974', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_3ff4a6c1eac13353bd121f33b9ee26cf', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_96ba6be83e387b48cfddb4345dfac3b9', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
+SMS sent successfully to +254712345678: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: KES 0.8000 Message parts: 1', 'Recipients': [{'cost': 'KES 0.8000', 'messageId': 'ATXid_a5d4e5bc7ef0ab81e3200115dbb61af5', 'number': '+254712345678', 'status': 'Success', 'statusCode': 101}]}}
