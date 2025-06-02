@@ -1,25 +1,20 @@
-import logging
-from decouple import config
+from django.conf import settings
 import africastalking
+import logging
 
-# Set up logging
 logger = logging.getLogger(__name__)
 
-# Initialize Africa’s Talking SDK
-username = config('AFRICASTALKING_USERNAME', default='sandbox')  # Match .env key
-api_key = config('AFRICASTALKING_API_KEY')  # Match .env key
-
-africastalking.initialize(username, api_key)
-sms = africastalking.SMS
-
 def send_sms(phone_number, message):
-    """
-    Send an SMS to the given phone number.
-    """
+    """Send SMS using Africa's Talking API."""
     try:
+        africastalking.initialize(
+            username=settings.AFRICASTALKING_USERNAME,
+            api_key=settings.AFRICASTALKING_API_KEY
+        )
+        sms = africastalking.SMS
         response = sms.send(message, [phone_number])
-        logger.info(f"SMS sent successfully to {phone_number}: {response}")
+        logger.info(f"SMS sent to {phone_number}: {response}")
         return response
     except Exception as e:
-        logger.error(f"Error sending SMS to {phone_number}: {str(e)}")
+        logger.error(f"Failed to send SMS to {phone_number}: {e}")
         return None

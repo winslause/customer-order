@@ -16,8 +16,8 @@
             <thead>
                 <tr>
                     <th>Customer</th>
-                    <th>Item</th>
-                    <th>Amount</th>
+                    <th>Items</th>
+                    <th>Total Amount</th>
                     <th>Time</th>
                 </tr>
             </thead>
@@ -25,8 +25,14 @@
                 {% for order in orders %}
                     <tr>
                         <td>{{ order.customer.name }}</td>
-                        <td>{{ order.item }}</td>
-                        <td>{{ order.amount }}</td>
+                        <td>
+                            {% for item in order.order_items.all %}
+                                {{ item.quantity }} x {{ item.product.name }} ({{ item.price }})<br>
+                            {% empty %}
+                                No items
+                            {% endfor %}
+                        </td>
+                        <td>{{ order.total_amount }}</td>
                         <td>{{ order.time }}</td>
                     </tr>
                 {% empty %}
