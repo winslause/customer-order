@@ -5,6 +5,10 @@ from django.core.mail import send_mail
 from django.conf import settings
 from .utils.sms import send_sms
 from mptt.models import MPTTModel, TreeForeignKey
+import logging
+from django.db import transaction
+
+logger = logging.getLogger(__name__)
 
 class Customer(models.Model):
     name = models.CharField(max_length=100)
@@ -48,30 +52,36 @@ class OrderItem(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
-        return f"{self.quantity} x {self.product.name} in Order {self.order.id}"
+        return f"{self.quantity} x {item.product.name} in Order {self.order.id}"
 
 @receiver(post_save, sender=Order)
 def send_order_notifications(sender, instance, created, **kwargs):
     if created and not instance.notification_sent:
+        logger.debug(f"Processing post_save signal for order {instance.id}. Created: {created}")
         customer_phone = instance.customer.phone
         admin_email = settings.ADMIN_EMAIL
 
-        order_details = "\n".join(
-            f"{item.quantity} x {item.product.name} - {item.price}" for item in instance.order_items.all()
-        ) or "No items yet"
-        message = (
-            f"New order created!\nCustomer: {instance.customer.name}\n"
-            f"Total Amount: {instance.total_amount}\nTime: {instance.time}\nItems:\n{order_details}"
-        )
+        # Ensure items are committed and visible
+        with transaction.atomic():
+            instance.refresh_from_db()
+            items = instance.order_items.all()
+            order_details = "\n".join(
+                f"{item.quantity} x {item.product.name} - {item.price}" for item in items
+            ) or "No items yet"
+            message = (
+                f"New order created!\nCustomer: {instance.customer.name}\n"
+                f"Total Amount: {instance.total_amount}\nTime: {instance.time}\nItems:\n{order_details}"
+            )
+
+        logger.debug(f"Order {instance.id} items count: {items.count()}, details: {order_details}")
 
         if customer_phone:
             try:
                 sms_response = send_sms(customer_phone, message)
-                if sms_response:
-                    print(f"SMS sent successfully: {sms_response}")
-                else:
-                    print("Failed to send SMS.")
+                logger.info(f"SMS sent to {customer_phone}: {sms_response}")
+                print(f"SMS sent successfully: {sms_response}")
             except Exception as e:
+                logger.error(f"Failed to send SMS to {customer_phone}: {e}")
                 print(f"Failed to send SMS: {e}")
 
         if admin_email:
@@ -83,9 +93,12 @@ def send_order_notifications(sender, instance, created, **kwargs):
                     recipient_list=[admin_email],
                     fail_silently=False,
                 )
+                logger.info(f"Email sent to admin: {admin_email}")
                 print(f"Email sent to admin: {admin_email}")
             except Exception as e:
+                logger.error(f"Failed to send email to {admin_email}: {e}")
                 print(f"Failed to send email: {e}")
 
         instance.notification_sent = True
         instance.save(update_fields=['notification_sent'])
+        logger.debug(f"Order {instance.id} notification_sent set to True")

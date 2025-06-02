@@ -43,13 +43,20 @@ class OrderSerializer(serializers.ModelSerializer):
         model = Order
         fields = ['id', 'customer', 'total_amount', 'time', 'order_items']
 
-    def validate_total_amount(self, value):
-        if value < 0:
+    def validate(self, data):
+        # Ensure order_items is not empty
+        if not data.get('order_items'):
+            raise serializers.ValidationError("At least one order item is required.")
+        # Calculate total_amount from order_items
+        total_amount = sum(item['quantity'] * item['price'] for item in data.get('order_items', []))
+        if total_amount < 0:
             raise serializers.ValidationError("Total amount cannot be negative.")
-        return value
+        data['total_amount'] = total_amount
+        return data
 
     def create(self, validated_data):
         order_items_data = validated_data.pop('order_items')
+        # Create order with calculated total_amount
         order = Order.objects.create(**validated_data)
         for item_data in order_items_data:
             OrderItem.objects.create(order=order, **item_data)
