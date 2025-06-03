@@ -101,6 +101,11 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
+        'core': {
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
         '': {
             'handlers': ['file', 'console'],
             'level': 'INFO',
@@ -130,10 +135,17 @@ OIDC_EXEMPT_URLS = ['/api/']
 OIDC_AUTHENTICATE_CLASS = 'mozilla_django_oidc.views.OIDCAuthenticationRequestView'
 OIDC_CALLBACK_CLASS = 'mozilla_django_oidc.views.OIDCAuthenticationCallbackView'
 
+# Authentication settings
+LOGIN_URL = '/oidc/authenticate/'
+
+# Auth0 logout configuration
+USE_AUTH0_LOGOUT = False  # Disable Auth0 logout until configuration is fixed
+
+
 # Session settings
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 SESSION_COOKIE_AGE = 1209600  # 2 weeks
-SESSION_COOKIE_SECURE = not DEBUG
+SESSION_COOKIE_SECURE = not DEBUG  # False in DEBUG mode
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = 'Lax'
 SESSION_SAVE_EVERY_REQUEST = True

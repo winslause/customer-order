@@ -19,5 +19,6 @@ urlpatterns = [
     path('orders/', views.OrderListView.as_view(), name='orders'),
     path('orders/add/', views.OrderCreateView.as_view(), name='order_add'),
     path('api/', include(router.urls)),
+    
     path('logout/', views.oidc_logout, name='logout'),
 ]

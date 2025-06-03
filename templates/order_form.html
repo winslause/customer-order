@@ -1,30 +1,36 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block title %}Add Order{% endblock %}
 {% block content %}
-    <h1>Add Order</h1>
-    <form method="POST">
-        {% csrf_token %}
-        <div class="form-group">
-            <label for="customer">Customer:</label>
-            <select name="customer" id="customer" required>
-                <option value="">Select Customer</option>
-                {% for customer in customers %}
-                    <option value="{{ customer.id }}">{{ customer.name }}</option>
-                {% endfor %}
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Products:</label>
-            {% for product in products %}
-                <div class="product-group">
-                    <input type="checkbox" name="products" value="{{ product.id }}" id="product-{{ product.id }}">
-                    <label for="product-{{ product.id }}">{{ product.name }} ({{ product.price }})</label>
-                    <input type="number" name="quantity_{{ product.id }}" min="1" value="1" placeholder="Quantity">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="mb-4">Add Order</h2>
+            <form method="POST" class="p-4 bg-light rounded shadow-sm">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="customer" class="form-label">Customer</label>
+                    <select name="customer" id="customer" class="form-select" required>
+                        <option value="">Select a customer</option>
+                        {% for customer in customers %}
+                            <option value="{{ customer.id }}">{{ customer.name }}</option>
+                        {% endfor %}
+                    </select>
                 </div>
-            {% endfor %}
+                <div class="mb-3">
+                    <label class="form-label">Products</label>
+                    {% for product in products %}
+                        <div class="form-check">
+                            <input type="checkbox" name="products" value="{{ product.id }}" id="product_{{ product.id }}" class="form-check-input">
+                            <label for="product_{{ product.id }}" class="form-check-label">
+                                {{ product.name }} ({{ product.price }})
+                            </label>
+                            <input type="number" name="quantity_{{ product.id }}" min="1" value="1" class="form-control mt-2 w-25" placeholder="Quantity">
+                        </div>
+                    {% endfor %}
+                </div>
+                <button type="submit" class="btn btn-primary">Save Order</button>
+                <a href="{% url 'orders' %}" class="btn btn-secondary">Cancel</a>
+            </form>
         </div>
-        <button type="submit">Save Order</button>
-    </form>
+    </div>
 {% endblock %}

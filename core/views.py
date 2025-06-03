@@ -11,18 +11,54 @@ from .serializers import CustomerSerializer, CategorySerializer, ProductSerializ
 from django.db.models import Avg
 from django.contrib.auth import logout
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
 import urllib.parse
+import logging
+import uuid
 
+logger = logging.getLogger(__name__)
+
+@csrf_exempt
 def oidc_logout(request):
     """Custom OIDC logout function to clear session and redirect to Auth0 logout."""
-    logout(request)
-    logout_url = settings.OIDC_OP_LOGOUT_URL
-    return_to = urllib.parse.quote(settings.LOGOUT_REDIRECT_URL)
-    full_logout_url = f"{logout_url}?client_id={settings.OIDC_RP_CLIENT_ID}&returnTo={return_to}"
-    return redirect(full_logout_url)
+    logger.debug(f"Logout initiated. Session before: {dict(request.session.items())}")
+    logger.debug(f"Request headers: {dict(request.headers)}")
+    
+    try:
+        # Check if logout has already been processed
+        logout_key = f"logout_{request.session.session_key or str(uuid.uuid4())}"
+        if request.session.get(logout_key):
+            logger.debug("Logout already processed, redirecting to home")
+            return redirect('home')
+        
+        # Mark logout as processed
+        request.session[logout_key] = True
+        request.session.modified = True
+        
+        # Clear session
+        logout(request)
+        request.session.flush()
+        logger.debug(f"Session after logout: {dict(request.session.items())}")
+        
+        # Construct Auth0 logout URL
+        logout_url = settings.OIDC_OP_LOGOUT_URL
+        return_to = urllib.parse.quote(settings.LOGOUT_REDIRECT_URL)
+        full_logout_url = f"{logout_url}?client_id={settings.OIDC_RP_CLIENT_ID}&returnTo={return_to}"
+        logger.info(f"Redirecting to Auth0 logout: {full_logout_url}")
+        return redirect(full_logout_url)
+    except Exception as e:
+        logger.error(f"Logout error: {str(e)}")
+        messages.error(request, "Error during logout. Session cleared locally.")
+        # Ensure session is cleared even if Auth0 fails
+        logout(request)
+        request.session.flush()
+        return redirect('home')
 
 class HomeView(View):
     def get(self, request):
+        if not request.user.is_authenticated:
+            logger.debug(f"Unauthenticated user accessing homepage, redirecting to login. Session: {dict(request.session.items())}")
+            return redirect(settings.LOGIN_URL)
         return render(request, 'home.html')
 
 class CustomerListView(LoginRequiredMixin, View):
